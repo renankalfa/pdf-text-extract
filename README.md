@@ -19,7 +19,9 @@ Foi encontrado a cartilha da redes de proteção à mulher feita, em 2021, pelo 
 # 4. Conclusão
 # 5. Próximos Passos
 
-1. Melhora da limpeza do texto extraído do pdf.
+1. Implementações de melhorias na limpeza do texto extraído do pdf.
+2. Implementações de melhorias no campo "endereço".
+
 # 6. Ferramentas Utilizadas
 
 - Python (3.9.6)
