@@ -6,7 +6,22 @@ Este repositório tem como objetivo apresentar uma solução desenvolvida por mi
 # 1. Problema de Negócio
 Com o objetivo de mapear as redes estaduais e locais de enfrentamento à violência contra as mulheres, em uma fase piloto, precisaríamos levantar essas redes para o Distrito Federal.
 # 2. Resultados Obtidos
+Foi encontrado a cartilha da redes de proteção à mulher feita, em 2021, pelo Tribunal de Justiça do Distrito Federal e dos Territórios. Com isso, aproveitamos esse trabalho, extraímos os dados do arquivo pdf fornecido e criamos um dashboard.
+
+![image](https://user-images.githubusercontent.com/97196457/214965121-87c45a69-9fb2-4e35-a6c7-1b2ba5ac4775.png)
+
 # 3. Processo Desenvolvido
+
+1. Analise do arquivo pdf (formato das informações, campos possíveis, padrões e possíveis dificuldades).
+2. Criação e extração das informações do pdf por meio de um script Python.
+3. Criação do dashboard por meio do Power BI
+
 # 4. Conclusão
 # 5. Próximos Passos
+
+1. Melhora da limpeza do texto extraído do pdf.
 # 6. Ferramentas Utilizadas
+
+- Python (3.9.6)
+- Jupyter Notebook (6.4.8)
+- Power BI (2.111)
