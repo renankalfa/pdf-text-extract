@@ -16,13 +16,12 @@ Foi encontrado a cartilha da redes de proteção à mulher feita, em 2021, pelo 
 2. Criação e extração das informações do pdf por meio de um script Python.
 3. Criação do dashboard por meio do Power BI
 
-# 4. Conclusão
-# 5. Próximos Passos
+# 4. Próximos Passos
 
 1. Implementações de melhorias na limpeza do texto extraído do pdf.
 2. Implementações de melhorias no campo "endereço".
 
-# 6. Ferramentas Utilizadas
+# 5. Ferramentas Utilizadas
 
 - Python (3.9.6)
 - Jupyter Notebook (6.4.8)
