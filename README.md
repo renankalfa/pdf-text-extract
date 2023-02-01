@@ -8,7 +8,15 @@ Com o objetivo de mapear as redes estaduais e locais de enfrentamento à violên
 # 2. Resultados Obtidos
 Foi encontrado a cartilha da redes de proteção à mulher feita, em 2021, pelo Tribunal de Justiça do Distrito Federal e dos Territórios. Com isso, aproveitamos esse trabalho, extraímos os dados do arquivo pdf fornecido e criamos um dashboard.
 
+1. Menu
+
 ![image](https://user-images.githubusercontent.com/97196457/214965121-87c45a69-9fb2-4e35-a6c7-1b2ba5ac4775.png)
+2. Consulta das Redes
+
+![consulta redesss](https://user-images.githubusercontent.com/97196457/216055615-269209ce-acc0-40c8-bd05-7c30eae47328.png)
+3. Análise das Redes
+
+![analise redesss](https://user-images.githubusercontent.com/97196457/216055631-70fdce76-3b7d-4ea3-b0a5-ec2f13689183.png)
 
 # 3. Processo Desenvolvido
 
