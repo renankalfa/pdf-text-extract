@@ -19,6 +19,46 @@ Foi encontrado a cartilha da redes de proteção à mulher feita, em 2021, pelo 
 
 1. Analise do arquivo pdf (formato das informações, campos possíveis, padrões e possíveis dificuldades).
 2. Criação e extração das informações do pdf por meio de um [script Python](https://github.com/renankalfa/pdf-text-extract/blob/main/PDF_extract.ipynb).
+
+    - Função destaque: por meio de um trecho de texto que se refere a uma instituição, ela trata e retorna um dicionário formatado da melhor forma.
+
+```python
+def get_dic_v2(t1):
+    categorias = ['Endereço', 'Telefones Gerais', 'Fax', 'E-mail', 'Observações', 
+                  'Observação', 'Atendimento', 'Horário', 'Público', 'Bens e Serviços',
+                  'Bens e serviços', 'Critérios', 'Critério']
+    l = []
+
+    # Busca os índices de todos os tipos de informações
+    for c in categorias:
+        if c == 'Atendimento':
+            l.append(t1.find(c, 30))
+        else:
+            l.append(t1.find(c))
+
+    # Dicionário apenas com os tipos de informações presentes
+    dic_contem = {}
+    for c in range(len(l)):
+        if l[c] != -1:
+            dic_contem[categorias[c]] = l[c]
+    dic_contem = dict(sorted(dic_contem.items(), key=lambda item: item[1]))
+
+    # Coleta as informações de cada tipo de informações e transforma em um dicionário
+    cont, dic_final= 0, {}
+    nome, indice = '', 0
+    for key, value in dic_contem.items():
+        if cont != 0:
+            dic_final[nome] = [t1[indice + len(nome):value]]
+        else:
+            dic_final['Instituição'] = [t1[:value]]
+            indice = value
+        cont = 1
+        nome = key
+        indice = value
+    dic_final[nome] = [t1[indice + len(nome):]]
+    return dic_final
+```
+
 3. Criação do dashboard por meio do Power BI.
 
 # 4. Próximos Passos
